@@ -2,7 +2,7 @@ package com.adamstinziani;
 
  class GreatestCommonDivisor {
     static int getGreatestCommonDivisor(int first, int second) {
-        int gcd = -1, fgcd = 0, sgcd = 0;
+        int gcd = -1;
         if (first > 9 && second > 9) {
             boolean less = first < second;
             int theLess, theMore;
