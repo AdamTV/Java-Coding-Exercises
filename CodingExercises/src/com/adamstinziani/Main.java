@@ -16,6 +16,7 @@ import static com.adamstinziani.FirstLastDigitSum.sumFirstAndLastDigit;
 import static com.adamstinziani.EvenDigitSum.getEvenDigitSum;
 import static com.adamstinziani.SharedDigit.hasSharedDigit;
 import static com.adamstinziani.LastDigitChecker.hasSameLastDigit;
+import static com.adamstinziani.GreatestCommonDivisor.getGreatestCommonDivisor;
 
 public class Main {
     public static void main(String[] args) {
@@ -30,6 +31,7 @@ public class Main {
         int palindrome = 1001;
         int number = 246;
         int one = 10, two = 20, three = 32;
+        int gcd1 = 81, gcd2 = 153;
         printConversion(KPH);
         printMegaBytesAndKiloBytes(kB);
         System.out.println("My dog is barking before 8:00 a.m., I " + (shouldWakeUp(true, 7) ? "should" : "shan't") + " wake up");
@@ -49,5 +51,6 @@ public class Main {
         System.out.println("The sum of the even digits of " + number + " is " + getEvenDigitSum(number));
         System.out.println(shared1 + " and " + shared2 + " have " + (hasSharedDigit(shared1, shared2) ? "" : "no ") + "shared digits in the range of 10-99");
         System.out.println(one + ", " + two + ", " + three + ": at least two of these numbers " + (hasSameLastDigit(one, two, three) ? "share " : "do not share ") + "the same last digit");
+        System.out.println("The GCD of " + gcd1 + " and " + gcd2 + " is " + getGreatestCommonDivisor(gcd1, gcd2));
     }
 }
