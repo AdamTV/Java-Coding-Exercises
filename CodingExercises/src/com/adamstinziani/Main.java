@@ -20,6 +20,7 @@ import static com.adamstinziani.GreatestCommonDivisor.getGreatestCommonDivisor;
 import static com.adamstinziani.NumberInWord.printNumberInWord;
 import static com.adamstinziani.NumberOfDaysInMonth.getDaysInMonth;
 import static com.adamstinziani.SumOddRange.sumOdd;
+import static  com.adamstinziani.FactorPrinter.printFactors;
 
 public class Main {
     public static void main(String[] args) {
@@ -59,5 +60,6 @@ public class Main {
         printNumberInWord(y);
         System.out.println("0" + two + "/" + year2 + " has " + getDaysInMonth(two, year2) + " days in it");
         System.out.println("The sum of all odd numbers between the integers " + two + " and " + number + " is " + sumOdd(two, number));
+        printFactors(kB);
     }
 }
